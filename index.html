@@ -6,10 +6,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="viewport" content="height=device-height, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="scripts/logic.js"></script>
     </head>
     <body>
-        {% for repository in site.github.public_repositories %}
-  * [{{ repository.name }}]({{ repository.html_url }})
-{% endfor %}
+        <div id="container">
+            <div id="header">
+                Welcome to my Site
+            </div>
+            <div id="sidebar">
+                <ul>
+                    <li id="about">About Me</li>
+                    <li id="projects">Project</li>
+                </ul>
+            </div>
+           
+            <div id="content">
+                
+            </div>            
+            <div id="footer">Joaquin Martinez 2020 &#174; </div>
+        </div>
     </body>
 </html>
