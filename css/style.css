@@ -8,10 +8,14 @@ and open the template in the editor.
     Author     : jomartinez
 */
 
-@import url('https://fonts.googleapis.com/css?family=Ultra&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Frijole&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Overpass&display=swap');
+
+@font-face {
+  font-family: 'Genuine';
+  src: url('../fonts/GENUINE.ttf'); /* IE9 Compat Modes */
+  src: url('../fonts/GENUINE.ttf')  format('truetype') /* Safari, Android, iOS */       
+}
+
 
 /*CSS reset*/
 html, body, div, span, applet, object, iframe,
@@ -54,12 +58,12 @@ body {
      --primary-3: #123044;
      --primary-4: #041C2C;
      --primary-5: #f1f1f1;*/
---primary-0: #23445A;
-     --primary-1: #236267;
-     --primary-2: #68979B;
-     --primary-3: #417C81;
-     --primary-4: #0E484E;
-     --primary-5: #012F34;
+    --primary-0: #23445A;
+    --primary-1: #236267;
+    --primary-2: #68979B;
+    --primary-3: #417C81;
+    --primary-4: #0E484E;
+    --primary-5: #012F34;
     --banner-height:110px;
     --ribon-height:35px;
     --footer-height:35px;
@@ -81,9 +85,9 @@ body {
 {
     grid-area: header;
     background-color: var(--primary-4);
-    font-family: 'Frijole', cursive;
+    font-family: 'Genuine', cursive;
     color: #ffffff;
-    padding-left: 200px;
+    padding-left: 255px;
     line-height: var(--banner-height);
     font-size: 26pt;
 }
@@ -120,7 +124,7 @@ body {
     font-size: 10pt;
     line-height: 35px;
     font-size: 7pt;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Overpass', cursive;
     text-align: center;
 }
 
@@ -141,7 +145,7 @@ body {
     color: #000;
     /* padding: 8px 16px; */
     text-decoration: none;
-    /* font-family: 'Bowlby One SC', cursive; */
+    font-family: 'Overpass', cursive;
     /* font-family: 'Press Start 2P', cursive; */
     text-align: center;
     margin-top: 30px;
@@ -163,14 +167,14 @@ body {
 #projecstList
 {
     display: grid;
-    grid-template-columns: 400px 400px 400px 400px;
+    grid-template-columns: 250px 250px 250px 250px;
     grid-gap: 20px 20px;
 }
 
 .project
 {
-    width: 400px;
-    height: 200px;
+    width: 250px;
+    height: 175px;
     border: 1px #d4d4d4 solid;
     box-shadow: 0px 0px 16px -10px black;
 }
