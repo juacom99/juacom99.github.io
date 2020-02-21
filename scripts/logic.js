@@ -7,8 +7,29 @@
 $(document).ready(function () {
 
 
-    $("#projects").click(function ()
+    $("#projects").click(onProjectClick)
+    
+    $("#about").click(function()
     {
+        $("#content").html('');
+    })
+    
+    $("#sidebar, #sidebar li").mouseover(function()
+    {
+        $("#sidebar").animate({width: '100%'});
+        event.stopPropagation()
+    })
+    
+     $("#sidebar, #sidebar li").mouseout(function()
+    {
+        $("#sidebar").animate({width: '55px'});
+        event.stopPropagation()
+    })
+});
+
+
+function onProjectClick()
+{
         $.ajax({
             //Cambiar a type: POST si necesario
             type: "GET",
@@ -43,11 +64,4 @@ $(document).ready(function () {
                         console.log("La solicitud a fallado: " + textStatus);
                     }
                 });
-            })
-});
-
-
-function processProjects()
-{
-    
-}
+            }
